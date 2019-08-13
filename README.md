@@ -132,3 +132,40 @@ $ python manage.py runserver
 ```
 
 `localhost:8000` 에서 확인해보자
+
+\
+
+
+
+
+
+
+
+1. 폴더만들고
+
+   mkdir __
+
+2. 가상환경 만들고
+
+   2-1.  .gitignore에 venv/ 추가
+
+   python -m venv venv
+
+3. 가상환경 실행후
+
+   source venv/Scripts/activate
+
+4. 원하는 django 버전 설치
+
+   pip install django
+
+5. 프로젝트 생성
+
+   django-admin startproject ___
+
+6. app 생성 및 등록
+7. url 설정
+
+8. views.py 설정
+9. templates 설정
+10. 서버실행
