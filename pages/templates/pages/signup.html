@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="{% static 'stylesheets/signup.css' %}">
+  <link rel="stylesheet" href="{% static 'pages/stylesheets/signup.css' %}">
 </head>
 <body>
   <!-- 
@@ -20,7 +20,7 @@
         - HTTP요청의 body (url에 보이지 않음)
         - django에서 POST 요청으로 form을 보내는 경우 보안상의 이유로 항상 csrf_token을 넣어줘야함
   -->
-    <form action="/signup_result/" method="POST">
+    <form action="/pages/signup_result/" method="POST">
       {% csrf_token %}
       <label for="username">username: </label>
       <input id="username" type="text" name="data_1"><br>
@@ -30,6 +30,6 @@
       <input id="password_confirmation" type="number" name="data_3"><br>
       <input type="submit" value="제출!">
     </form>
-    <img src="{% static 'images/163788.jpg' %}" alt="배경" width="500px" height="700px">
+    <img src="{% static 'pages/images/163788.jpg' %}" alt="배경" width="500px" height="700px">
 </body>
 </html>
