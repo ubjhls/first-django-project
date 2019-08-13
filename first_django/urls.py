@@ -22,7 +22,6 @@ from pages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pages/', include('pages.urls')),
         # 1. url 설정
     # path(url, 해당하는 views의 함수)
     path('',views.index),
